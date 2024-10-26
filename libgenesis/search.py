@@ -51,13 +51,13 @@ class Libgen:
         self.result_limit = result_limit
         self.__fields = ['def', 'title', 'author', 'series', 'publisher', 'year',
                          'identifier', 'language', 'md5', 'tags', 'extension']
-        self.__libgen_url = 'http://libgen.rs'
+        self.__libgen_url = 'http://libgen.is'
         self.__json_url = f'{self.__libgen_url}/json.php?'
         self.__search_url = f'{self.__libgen_url}/search.php?'
 
         self.__ses = requests.Session()
         self.__ses.cookies.set('lg_topic', 'libgen',
-                               domain='libgen.rs', expires=None)
+                               domain='libgen.is', expires=None)
         self.__ses.headers.update({
             'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
             'AppleWebKit/537.36 (KHTML, like Gecko) '

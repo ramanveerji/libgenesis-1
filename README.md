@@ -1,6 +1,6 @@
 # libgenesis
 
-Asynchronous python library for Libgen.rs to search and download books.
+Asynchronous python library for Libgen.is to search and download books.
 
 [![PyPI version](https://badge.fury.io/py/libgenesis.svg)](https://pypi.org/project/libgenesis)
 [![Build Python Package](https://github.com/Samfun75/libgenesis/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Samfun75/libgenesis/actions/workflows/python-publish.yml)
@@ -97,7 +97,7 @@ The returned data looks like this: (The dict key is the Libgen id of the book)
         'local': '0',
         'timeadded': '2013-02-15 18:40:21',
         'timelastmodified': '2019-12-21 21:23:21',
-        'coverurl': 'http://libgen.rs/covers/881000/a382109f7fdde3be5b2cb4f82d97443b-g.jpg',
+        'coverurl': 'http://libgen.is/covers/881000/a382109f7fdde3be5b2cb4f82d97443b-g.jpg',
         'identifierwodash': '0520220501,9780520220508',
         'tags': '',
         'pagesinfile': '331',
@@ -117,8 +117,8 @@ The returned data looks like this: (The dict key is the Libgen id of the book)
                 'z-library': 'http://b-ok.cc/md5/a382109f7fdde3be5b2cb4f82d97443b',
                 'libgen.pw': 'https://libgen.pw/item?id=881061',
                 'bookfi': 'http://bookfi.net/md5/a382109f7fdde3be5b2cb4f82d97443b',
-                'torrent': 'http://libgen.rs/book/index.php?md5=a382109f7fdde3be5b2cb4f82d97443b&oftorrent=',
-                'torrent_1k': 'http://libgen.rs/repository_torrent/r_881000.torrent',
+                'torrent': 'http://libgen.is/book/index.php?md5=a382109f7fdde3be5b2cb4f82d97443b&oftorrent=',
+                'torrent_1k': 'http://libgen.is/repository_torrent/r_881000.torrent',
                 'gnutella': 'magnet:?xt=urn:sha1:ZZYRRG56BOX3XAQ5D2IWAV2FUUC35ELG&xl=29750320&dn=a382109f7fdde3be5b2cb4f82d97443b.pdf',
                 'ed2k': 'ed2k://|file|A382109F7FDDE3BE5B2CB4F82D97443B.pdf|29750320|A63EEBB71C46DAE130725C07F2CDC67C|h=733CLKTMCYOGD4W5PIG2GMA7CMLAFN2V|/',
                 'dc++': 'magnet:?xt=urn:tree:tiger:O4O5Z7UL2YAOUG57PINCLOAN63HVZPCSDYACT6Q&xl=29750320&dn=a382109f7fdde3be5b2cb4f82d97443b.pdf'
@@ -160,4 +160,3 @@ async def download():
 
 async def progress(current, total, title):
     print('Downloading ', current, ' of ', total, ' ', title)
-```
